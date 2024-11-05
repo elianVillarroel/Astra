@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,7 @@ body {
     padding: 0;
 }
 
+/* Barra de navegación */
 .encabezado-principal {
     background-color: #d2a692;
     padding: 1rem;
@@ -38,9 +40,18 @@ body {
     letter-spacing: 1px;
     transition: all 0.3s ease;
 }
-.menu-navegacion a:hover {
-    color: #e06e5f;
+
+.boton-reserva a {
+    background-color: #e06e5f;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
 }
+
+/* Sección restaurante */
 .seccion-restaurante {
     height: 100vh;
     display: flex;
@@ -63,6 +74,8 @@ body {
     margin-top: 10px;
     text-align: center;
 }
+
+/* Botón general */
 .boton {
     background-color: #e06e5f;
     color: #ffffff;
@@ -75,8 +88,7 @@ body {
     transition: 0.3s ease;
 }
 
-
-
+/* Sección Nosotros */
 .seccion-nosotros {
     min-height: 100vh;
     padding: 100px 5%;
@@ -101,17 +113,20 @@ body {
     max-width: 1000px;
     margin: 0 auto;
 }
+
+/* Sección Menú */
 .seccion-menu {
     padding: 80px 20px;
     color: #ffffff;
     text-align: center;
 }
-
 .seccion-menu h3 {
     font-family: serif;
     font-size: 3em;
     margin-bottom: 30px;
 }
+
+/* Sección Tacos */
 .seccion-tacos {
     background-color: #d2a692;
     padding: 50px 0;
@@ -129,8 +144,6 @@ body {
     flex-wrap: wrap;
     padding: 20px;
 }
-
-
 .taco-item {
     background-color: #e06e5f;
     border-radius: 15px;
@@ -143,7 +156,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
 .taco-item img {
     width: 100%;
     height: 200px; 
@@ -153,7 +165,7 @@ body {
     margin-bottom: 10px;
 }
 
-
+/* Animación de fondo */
 @keyframes deslizar {
     0% { background-image: url('huevo1.jpg'); }
     25% { background-image: url('taco_al_pastor.jpg'); }
@@ -162,47 +174,52 @@ body {
     100% { background-image: url('burrito.jpg'); }
 }
 
-
-
+/* Sección Ubicación */
 .seccion-ubicacion {
-    padding: 50px 0;
+    padding: 50px 5%;
     text-align: center;
     background-color: #d2a692;
 }
 .contenedor-ubicacion {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.contact-info {
-    width: 25%;
-    padding: 20px;
+.contact-info, .opening-hours  {
     background-color: #d2a692;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.opening-hours {
-    width: 25%;
     padding: 20px;
-    background-color: #d2a692;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 280px; /* Mínimo ancho para mejor responsividad */
 }
 .map-container {
-    width: 50%;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
-    background-color:#d2a692;
+    background-color: #d2a692;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+.map-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+/* Contenedor general */
 .container {
     max-width: 960px;
     margin: 0 auto;
     padding: 2rem;
     background-color: #d2a692;
+    text-align: center;
 }
-
-
 h1 {
     text-align: center;
     margin-bottom: 1rem;
@@ -216,13 +233,15 @@ nav a {
     color: #333;
     margin: 0 1rem;
 }
+
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #814f4f;
 }
 
-
+/* Sección Platos Destacados */
 .seccion-platos-destacados {
     padding: 50px 5%;
     background-color: #d9b9a3;
@@ -240,8 +259,6 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
 }
-
-
 .plato-item {
     display: flex;
     align-items: center;
@@ -278,4 +295,90 @@ footer {
     color: #8b4513;
     font-size: 1.1em;
     float: right;
+}
+
+
+
+.fondo-menu {
+    background: url('burrito.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fondo-menu h1 {
+    font-size: 4rem; /* Adjust the size to your preference */
+    color: white;
+    font-family: 'Playfair Display', serif; /* Or another cursive font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for contrast */
+    margin: 0;
+}
+
+
+.fondo-contacto {
+    background: url('enchiladas.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fondo-contacto h1 {
+    font-size: 4rem; /* Adjust the size to your preference */
+    color: white;
+    font-family: 'Playfair Display', serif; /* Or another cursive font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for contrast */
+    margin: 0;
+}
+
+
+.fondo-nosotros {
+    background: url('quesadillas.jpg') no-repeat center center / cover;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fondo-nosotros h1 {
+    font-size: 4rem; /* Adjust the size to your preference */
+    color: white;
+    font-family: 'Playfair Display', serif; /* Or another cursive font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for contrast */
+    margin: 0;
+}
+
+
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    .contenedor-navegacion {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-navegacion {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .menu-navegacion a {
+        font-size: 1.1rem;
+    }
+    .boton-reserva {
+        margin-top: 10px;
+    }
+    /* Sección de ubicación */
+    .contenedor-ubicacion {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
