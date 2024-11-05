@@ -15,7 +15,6 @@ body {
 .encabezado-principal {
     background-color: #d2a692;
     padding: 1rem;
-    position: fixed;
     width: 100%;
     z-index: 1000;
     box-shadow: rgba(0, 0, 0, 0.1);
@@ -218,9 +217,8 @@ body {
     margin: 0 auto;
     padding: 2rem;
     background-color: #d2a692;
-    text-align: center;
 }
-h1 {
+h1, h2, h3 {
     text-align: center;
     margin-bottom: 1rem;
 }
