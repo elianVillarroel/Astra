@@ -1,4 +1,4 @@
-/* Estilos generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body {
     padding: 0;
 }
 
-/* Barra de navegación */
 .encabezado-principal {
     background-color: #d2a692;
     padding: 1rem;
@@ -50,7 +49,7 @@ body {
     transition: 0.3s ease;
 }
 
-/* Sección restaurante */
+
 .seccion-restaurante {
     height: 100vh;
     display: flex;
@@ -74,7 +73,7 @@ body {
     text-align: center;
 }
 
-/* Botón general */
+
 .boton {
     background-color: #e06e5f;
     color: #ffffff;
@@ -87,7 +86,7 @@ body {
     transition: 0.3s ease;
 }
 
-/* Sección Nosotros */
+
 .seccion-nosotros {
     min-height: 100vh;
     padding: 100px 5%;
@@ -113,7 +112,6 @@ body {
     margin: 0 auto;
 }
 
-/* Sección Menú */
 .seccion-menu {
     padding: 80px 20px;
     color: #ffffff;
@@ -125,14 +123,14 @@ body {
     margin-bottom: 30px;
 }
 
-/* Sección Tacos */
+
 .seccion-tacos {
     background-color: #d2a692;
     padding: 50px 0;
     text-align: center;
 }
 .seccion-tacos h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: serif;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -164,7 +162,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Animación de fondo */
+
 @keyframes deslizar {
     0% { background-image: url('huevo1.jpg'); }
     25% { background-image: url('taco_al_pastor.jpg'); }
@@ -173,7 +171,7 @@ body {
     100% { background-image: url('burrito.jpg'); }
 }
 
-/* Sección Ubicación */
+
 .seccion-ubicacion {
     padding: 50px 5%;
     text-align: center;
@@ -191,7 +189,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     flex: 1;
-    min-width: 280px; /* Mínimo ancho para mejor responsividad */
+    min-width: 280px; 
 }
 .map-container {
     width: 100%;
@@ -211,7 +209,6 @@ body {
 }
 
 
-/* Contenedor general */
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -232,14 +229,14 @@ nav a {
     margin: 0 1rem;
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #814f4f;
 }
 
-/* Sección Platos Destacados */
+
 .seccion-platos-destacados {
     padding: 50px 5%;
     background-color: #d9b9a3;
@@ -254,11 +251,11 @@ footer {
 }
 .contenedor-platos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
 }
+
 .plato-item {
-    display: flex;
     align-items: center;
     background-color: #f2d1b3;
     padding: 20px;
@@ -309,10 +306,10 @@ footer {
 }
 
 .fondo-menu h1 {
-    font-size: 4rem; /* Adjust the size to your preference */
+    font-size: 4rem; 
     color: white;
-    font-family: 'Playfair Display', serif; /* Or another cursive font */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for contrast */
+    font-family: 'Playfair Display', serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     margin: 0;
 }
 
@@ -329,10 +326,10 @@ footer {
 }
 
 .fondo-contacto h1 {
-    font-size: 4rem; /* Adjust the size to your preference */
+    font-size: 4rem; 
     color: white;
-    font-family: 'Playfair Display', serif; /* Or another cursive font */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for contrast */
+    font-family: 'Playfair Display', serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     margin: 0;
 }
 
@@ -349,16 +346,14 @@ footer {
 }
 
 .fondo-nosotros h1 {
-    font-size: 4rem; /* Adjust the size to your preference */
+    font-size: 4rem; 
     color: white;
-    font-family: 'Playfair Display', serif; /* Or another cursive font */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Adds a shadow for contrast */
+    font-family: 'Playfair Display', serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
     margin: 0;
 }
 
 
-
-/* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
     .contenedor-navegacion {
         flex-direction: column;
@@ -368,15 +363,20 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
+    .contenedor-platos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+    }
     .menu-navegacion a {
         font-size: 1.1rem;
     }
     .boton-reserva {
         margin-top: 10px;
     }
-    /* Sección de ubicación */
     .contenedor-ubicacion {
         flex-direction: column;
         gap: 20px;
     }
 }
+
